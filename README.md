@@ -49,7 +49,9 @@ Then using the `oksrt` constant, call the function `onload()` and watch the magi
 
 The ```<span>``` tag will be replaced with a the share button.
 
-#### 4. Customizing the Button
+## Customization
+
+#### 1. Customizing the Button
 
 You can fully customize the button with a few simple lines of code. Make sure you set them before you call for the button to be loaded with `oksrt.onload()`.
 

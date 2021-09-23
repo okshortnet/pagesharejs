@@ -1,11 +1,10 @@
 # PageShare
 
-![downloads](https://img.shields.io/github/downloads/okshortnet/pagesharejs/total)
-![coverage](https://img.shields.io/badge/coverage-100%25-success)
-![codesize](https://img.shields.io/github/languages/code-size/okshortnet/pagesharejs)
-![linesofcode](https://img.shields.io/tokei/lines/github/okshortnet/pagesharejs)
-![version](https://img.shields.io/github/v/release/okshortnet/pagesharejs)
-[![website](https://img.shields.io/badge/website-okshort.net-informational)](https://okshort.net/)
+![downloads](https://img.shields.io/github/downloads/okshortnet/pagesharejs/total?style=for-the-badge)
+![codesize](https://img.shields.io/github/languages/code-size/okshortnet/pagesharejs?style=for-the-badge)
+![linesofcode](https://img.shields.io/tokei/lines/github/okshortnet/pagesharejs?style=for-the-badge)
+![version](https://img.shields.io/github/v/release/okshortnet/pagesharejs?style=for-the-badge)
+[![website](https://img.shields.io/badge/website-okshort.net-informational?style=for-the-badge)](https://okshort.net/)
 
 ## What is PageShare?
 

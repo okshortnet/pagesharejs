@@ -108,9 +108,9 @@ oksrt.color = "#4C8BF5"
 
 ## Project To-Do List
 
-- Theme changer (Light and Dark) for the menu
-- Custom button css option to customize the style of the share button completely.
-- Button style matcher to match the style of other buttons on the page.
+- [ ] Theme changer (Light and Dark) for the menu
+- [ ] Custom button css option to customize the style of the share button completely.
+- [ ] Button style matcher to match the style of other buttons on the page.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

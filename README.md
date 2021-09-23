@@ -28,7 +28,7 @@ Include either `pageshare.js` or `pageshare.min.js` with a `<script>` tag:
 
 Or load the script from a CDN provider:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/okshortnet/pageshare/src/pageshare.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/okshortnet/pagesharejs/src/pageshare.min.js"></script>
 ```
 
 After loading the script `oksrt` will be available as a global variable.

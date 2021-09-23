@@ -2,7 +2,7 @@
           PageShare.js v1.0
        Created by OkShort.net
             MIT Licenced
-*/ -------------------------------
+   ------------------------------- */
 const oksrt = {
     // Set the text of the button
     text: "Shorten & Share",

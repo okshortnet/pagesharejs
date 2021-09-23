@@ -1,4 +1,8 @@
-// OkShort For Blogs
+/* -------------------------------
+          PageShare.js v1.0
+       Created by OkShort.net
+            MIT Licenced
+*/ -------------------------------
 const oksrt = {
     // Set the text of the button
     text: "Shorten & Share",
@@ -200,7 +204,7 @@ const oksrt = {
                 // If it hasn't been shortened already, create the menu
                 this.createMenu();
                 // Create the query to the OkShort API
-                const query = await fetch("http://localhost/okshort_api/?url=" + encodeURIComponent(u))
+                const query = await fetch("https://api.okshort.net/?url=" + encodeURIComponent(u))
                 .catch(e => { throw e; });
                 // Handle the response
                 this.swapMenu(await query.json());

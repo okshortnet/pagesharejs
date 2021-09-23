@@ -195,7 +195,7 @@ const oksrt = {
             // Prevent default browser action
             e.preventDefault();
             // Query the OkShort API with the current URL
-            let u = "https://google.com"; //window.location.href;
+            let u = window.location.href;
             // Create the menu and overlay
             if (this.shortened === true) {
                 // If the url has already been shortened, show it instead of creating a new one

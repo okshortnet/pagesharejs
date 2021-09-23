@@ -4,6 +4,7 @@
 ![coverage](https://img.shields.io/badge/cdn_coverage-100%25-success)
 ![codesize](https://img.shields.io/github/languages/code-size/okshortnet/pagesharejs)
 ![linesofcode](https://img.shields.io/tokei/lines/github/okshortnet/pagesharejs)
+![version](https://img.shields.io/github/v/release/okshortnet/pagesharejs)
 [![website](https://img.shields.io/badge/website-okshort.net-informational)](https://okshort.net/)
 
 ## What is PageShare?

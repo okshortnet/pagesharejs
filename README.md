@@ -16,7 +16,7 @@ PageShare is a website component that allows users to automatically shorten and 
 
 > If you intend on using a CDN you can skip over the download step
 
-You can download the `pageshare.js` or `pageshare.min.js` [here](#), or from this repo and add them to your project directory.
+You can download the `pageshare.js` or `pageshare.min.js` [here](https://github.com/okshortnet/pagesharejs.git), or from this repo and add them to your project directory.
 
 #### 2. Include
 

@@ -131,7 +131,7 @@ Example of `class`:
 oksrt.matchBtn = ".foo-bar"
 ```
 
-Example of `id`:
+Example of `selector`:
 ```javascript
 oksrt.matchBtn = ".foo #bar a.btn"
 ```
@@ -143,6 +143,11 @@ There is only 1 customizable option for the menu, and that is the theme. You can
 Variable | Value(s) | Description
 --- | --- | ---
 `oksrt.theme` | light, dark (default) | Change the theme of the menu.
+
+Example:
+```javascript
+oksrt.theme = "light" // Default is dark
+```
 
 ## Project To-Do List
 

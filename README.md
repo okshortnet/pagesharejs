@@ -58,6 +58,7 @@ Variable | Value(s) | Description
 `oksrt.text` | Text for the button | Change the text of the button.
 `oksrt.style` | round (default), square, pill  | Change the style of the button from presets.
 `oksrt.color` | Color Hex (default is [#4C8BF5](https://www.google.com/search?q=%234C8BF5&sxsrf=AOaemvLXHLsvAzpjI6Tw1JrPWEdEMr-aeA%3A1632392067701&source=hp&ei=g1NMYcunKM3F-gTwr7vYDA&iflsig=ALs-wAMAAAAAYUxhkwXHr6lViXffIkZ5hLNy_mf7f7sV&oq=%234C8BF5&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECc6BwgjEOoCECc6BQgAEIAEUOwIWOAYYPAaaAFwAHgAgAFPiAGRAZIBATKYAQCgAQKgAQGwAQo&sclient=gws-wiz&ved=0ahUKEwiL9c6q7pTzAhXNop4KHfDXDssQ4dUDCAk&uact=5)) | Change the color of the button.
+`oksrt.matchBtn` | True or False | Will find the style of other buttons and match it.
 
 The buttons text will automatically be set to a color that will be seen the best with the given background.
 
@@ -106,11 +107,48 @@ Example:
 oksrt.color = "#4C8BF5"
 ```
 
+#### Button Style Matcher
+
+If you want the button to better match with the existing ones on your page, you can use `oksrt.matchBtn` to match them. (By default this variable is set to `false`).
+
+There are 2 ways you can do this. 
+
+First, set the variable to `true` and the button will match the styles of the first `<button>` on the DOM.
+
+```javascript
+oksrt.matchBtn = true
+```
+
+Lastly, you can specify a DOM selector to match the style.
+
+Example of `id`:
+```javascript
+oksrt.matchBtn = "#foo-bar"
+```
+
+Example of `class`:
+```javascript
+oksrt.matchBtn = ".foo-bar"
+```
+
+Example of `id`:
+```javascript
+oksrt.matchBtn = ".foo #bar a.btn"
+```
+
+#### 5. Customizing the Menu
+
+There is only 1 customizable option for the menu, and that is the theme. You can choose between `light` or `dark`.
+
+Variable | Value(s) | Description
+--- | --- | ---
+`oksrt.theme` | light, dark (default) | Change the theme of the menu.
+
 ## Project To-Do List
 
-- [ ] Theme changer (Light and Dark) for the menu
+- [x] Theme changer (Light and Dark) for the menu
 - [ ] Custom button css option to customize the style of the share button completely.
-- [ ] Button style matcher to match the style of other buttons on the page.
+- [x] Button style matcher to match the style of other buttons on the page.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

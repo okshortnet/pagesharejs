@@ -37,6 +37,10 @@ After loading the script `oksrt` will be available as a global variable.
 
 To add the share button to your page, add a `<span>` tag with `data-short` attribute where you would like it.
 
+```html
+<span data-short></span>
+```
+
 Then using the `oksrt` constant, call the function `onload()` and watch the magic happen.
 
 ```html

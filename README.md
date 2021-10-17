@@ -4,7 +4,6 @@
 ![codesize](https://img.shields.io/github/languages/code-size/okshortnet/pagesharejs?style=for-the-badge)
 ![linesofcode](https://img.shields.io/tokei/lines/github/okshortnet/pagesharejs?style=for-the-badge)
 ![version](https://img.shields.io/github/v/release/okshortnet/pagesharejs?style=for-the-badge)
-[![website](https://img.shields.io/badge/website-okshort.net-informational?style=for-the-badge)](https://okshort.net/)
 
 ## What is PageShare?
 

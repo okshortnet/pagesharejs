@@ -1,5 +1,5 @@
 /* -------------------------------
-          PageShare.js v1.2
+          PageShare.js v1.3
        Created by OkShort.net
             MIT Licenced
    ------------------------------- */
@@ -119,37 +119,37 @@ const oksrt = {
         // Create a style element to contain our styles
         let s = document.createElement('style');
         // Add the styles for the container
-        s.innerHTML = ".oksrt-con{margin:2px;padding:2px;background:inherit;color:inherit;}";
+        s.innerHTML = ".oksrt-con{margin:2px;padding:2px;background:inherit;color:inherit;}.oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;font-weight: 200;}";
         // Check if matchBtn is set to anything but false, if not then we apply our styles
         if (this.matchBtn === false) {
             // Choose the right styles to inject for the button
             switch(this.style) {
                 case 'round':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 10px 16px;border-radius: 10px;font-size: 20px;}";
+                    s.innerHTML += ".oksrt-con button{padding: 10px 16px;border-radius: 10px;font-size: 20px;}";
                     break;
                 case 'round-lg':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 12px 20px;border-radius: 15px;font-size: 24px;}";
+                    s.innerHTML += "padding: 12px 20px;border-radius: 15px;font-size: 24px;}";
                     break;
                 case 'square':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 10px 16px;font-size: 20px;}";
+                    s.innerHTML += "padding: 10px 16px;font-size: 20px;}";
                     break;
                 case 'square-lg':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 12px 20px;font-size: 24px;}";
+                    s.innerHTML += "padding: 12px 20px;font-size: 24px;}";
                     break;
                 case 'pill':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 10px 20px;border-radius: 32px;font-size: 20px;}";
+                    s.innerHTML += "padding: 10px 20px;border-radius: 32px;font-size: 20px;}";
                     break;
                 case 'pill-lg':
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 10px 24px;border-radius: 32px;font-size: 24px;}";
+                    s.innerHTML += "padding: 10px 24px;border-radius: 32px;font-size: 24px;}";
                     break;                                       
                 default:
                     // Default is round
-                    s.innerHTML += ".oksrt-con button{text-decoration: none;border: none;outline: none;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 200;-webkit-filter: brightness(100%);padding: 10px 16px;border-radius: 10px;font-size: 20px;}";
+                    s.innerHTML += "padding: 10px 16px;border-radius: 10px;font-size: 20px;}";
                     break;
             }
         }
         s.innerHTML += ".oksrt-con button{-webkit-filter: brightness(100%) !important;}.oksrt-con button:hover{-webkit-filter: brightness(110%) !important;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;-ms-transition: all 500ms ease;transition: all 500ms ease;cursor:pointer !important;}";
-        s.innerHTML += ".oksrt-overlay{position:fixed;display:block;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,.5);z-index:888}.oksrt-share{display:flex;flex-direction:column;width:500px;height:auto;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#212121;color:#f4f4f4;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif!important;font-size:16px;padding:18px;font-weight:200;z-index:999}.oksrt-share.light{background:#fff;color:#1a1a1a}.oksrt-share span{position:absolute;top:0;right:0;padding:8px}.oksrt-share span button{background:0 0;border:none;outline:0;color:#f4f4f4;font-size:42px;transition:color 250ms ease}.oksrt-share.light span button{color:#1a1a1a}.oksrt-share span button:hover{cursor:pointer;color:#c83232}.oksrt-share h1{font-size:24px;font-weight:200;margin-top:0;margin-bottom:20px}.oksrt-share hr{width:100%;background:#f4f4f4;opacity:.1}.oksrt-share.light hr{width:100%;background:#1a1a1a;opacity:.1}.oksrt-row{display:flex;flex-direction:row;width:100%}.oksrt-row .oksrt-col{display:flex;flex-direction:column;justify-content:center;text-align:center;flex:0 0 25%;-ms-flex:0 0 25%;width:25%}.oksrt-row .oksrt-col svg{width:32px!important;height:32px!important;padding:0!important;margin:0!important}.oksrt-row .oksrt-col p{margin-top:4px;font-size:16px}.oksrt-circle{display:flex;align-items:center;justify-content:center;margin:auto;padding:16px;width:40px;height:40px;border-radius:50%;transform:translateY(0);transition:transform 250ms ease}.oksrt-share.light .oksrt-circle:first-of-type{border:1px solid #e0e0e0}.oksrt-circle:hover{cursor:pointer;transform:translateY(-3px)}.oksrt-copybox{margin-top:16px;padding:8px;display:flex;flex-direction:row;background:#181818}.oksrt-share.light .oksrt-copybox{background:#f9f9f9;border:1px solid #e0e0e0}.oksrt-copybox input[type=text]{background:0 0;border:none;outline:0;color:#f4f4f4;width:80%;padding-left:16px;font-size:15px}.oksrt-share.light .oksrt-copybox input[type=text]{color:#1a1a1a}.oksrt-copybox button{border:none;outline:0;background:0 0;color:#4c8bf5;padding:auto;width:20%;text-transform:uppercase;font-weight:700;font-size:16px;transition:color 250ms ease}.oksrt-loader{width:50px;height:50px;margin:16px auto;border-radius:50%;border:3px solid;border-top-color:#4c8bf5;border-left-color:rgba(76,139,245,.25);border-bottom-color:#4c8bf5;border-right-color:rgba(76,139,245,.25);animation:1s oksrt-spin infinite}@keyframes oksrt-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}.oksrt-copybox button:hover{cursor:pointer;color:#296bdf}.oksrt-err{margin-top:0;margin-bottom:5px;color:#4b4b4b}";
+        s.innerHTML += ".oksrt-overlay{position:fixed;display:block;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,.5);z-index:888}.oksrt-share{display:flex;flex-direction:column;width:500px;height:auto;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#212121;color:#f4f4f4;font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif!important;font-size:16px;padding:18px;font-weight:200;z-index:999}.oksrt-share.light{background:#fff;color:#1a1a1a}.oksrt-share span{position:absolute;top:0;right:0;padding:8px}.oksrt-share span button{background:0 0;border:none;outline:0;color:#f4f4f4;font-size:42px;transition:color 250ms ease}.oksrt-share.light span button{color:#1a1a1a}.oksrt-share span button:hover{cursor:pointer;color:#c83232}.oksrt-share h1{font-size:24px;font-weight:200;margin-top:0;margin-bottom:20px}.oksrt-share hr{width:100%;background:#f4f4f4;opacity:.1}.oksrt-share.light hr{width:100%;background:#1a1a1a;opacity:.1}.oksrt-row{display:flex;flex-direction:row;width:100%}.oksrt-row .oksrt-col{display:flex;flex-direction:column;justify-content:center;text-align:center;flex:0 0 25%;-ms-flex:0 0 25%;width:25%}.oksrt-row .oksrt-col svg{width:32px !important;height:32px !important;padding:0!important;margin:0!important}.oksrt-row .oksrt-col p{margin-top:4px;font-size:16px}.oksrt-circle{display:flex;align-items:center;justify-content:center;margin:auto;padding:16px;width:40px;height:40px;border-radius:50%;transform:translateY(0);transition:transform 250ms ease}.oksrt-share.light .oksrt-circle:first-of-type{border:1px solid #e0e0e0}.oksrt-circle:hover{cursor:pointer;transform:translateY(-3px)}.oksrt-copybox{margin-top:16px;padding:8px;display:flex;flex-direction:row;background:#181818}.oksrt-share.light .oksrt-copybox{background:#f9f9f9;border:1px solid #e0e0e0}.oksrt-copybox input[type=text]{background:0 0;border:none;outline:0;color:#f4f4f4;width:80%;padding-left:16px;font-size:15px}.oksrt-share.light .oksrt-copybox input[type=text]{color:#1a1a1a}.oksrt-copybox button{border:none;outline:0;background:0 0;color:#4c8bf5;padding:auto;width:20%;text-transform:uppercase;font-weight:700;font-size:16px;transition:color 250ms ease}.oksrt-loader{width:50px;height:50px;margin:16px auto;border-radius:50%;border:3px solid;border-top-color:#4c8bf5;border-left-color:rgba(76,139,245,.25);border-bottom-color:#4c8bf5;border-right-color:rgba(76,139,245,.25);animation:1s oksrt-spin infinite}@keyframes oksrt-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}.oksrt-copybox button:hover{cursor:pointer;color:#296bdf}.oksrt-err{margin-top:0;margin-bottom:5px;color:#4b4b4b}";
         // Add the style element to the head
         let h = ((document.head == null) ? document.body : document.head);
         h.appendChild(s);
@@ -305,6 +305,7 @@ const oksrt = {
             // Create the icons for the share buttons
             let i1 = document.createElement('i');
             i1.dataset.feather = "code";
+            i1.classList.add('feather-icon-size');
             let i2 = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
             i2.setAttribute('width', '24');
             i2.setAttribute('height', '24');
@@ -313,10 +314,13 @@ const oksrt = {
             pth.setAttribute('d', 'M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z');
             pth.setAttribute('fill', '#FFFFFF');
             i2.appendChild(pth);
+            i2.classList.add('feather-icon-size');
             let i3 = document.createElement('i');
             i3.dataset.feather = "twitter";
+            i3.classList.add('feather-icon-size');
             let i4 = document.createElement('i');
             i4.dataset.feather = "mail";
+            i4.classList.add('feather-icon-size');
             // Create the text for each share button
             let t1 = document.createElement('p');
             t1.innerText = "Embed";

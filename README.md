@@ -1,3 +1,5 @@
+# THE OKSHORT API IS NO LONGER ACCESSABLE
+
 # PageShare
 
 ![downloads](https://img.shields.io/github/downloads/okshortnet/pagesharejs/total?style=for-the-badge)
